@@ -3,11 +3,36 @@
 
 <head>
     <title>Inorrow Tab</title>
+    <meta charset="utf-8">
     <link rel="icon" href="/icons/tab.svg" type="image/png" crossorigin="anonymous" sizes="32x32">
+    <script type="module" src="sober/dist/sober.min.js"></script>
+    <script type="module" src="sober-theme/dist/sober-theme.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
-    Welcome Back
+    <!--
+    Present by Ikarai
+    使用了SoberJS项目
+    其中带有"s-"字样的标签均为Sober组件
+    -->
+    <s-page>
+        <div class="main" id="main">
+            <div class="clock">
+                <div id="date">123</div>
+                <div id="time">abcMl</div>
+            </div>
+            <div>
+                <s-search placeholder="搜索关键字" class="search-bar">
+                    <s-icon name="search" slot="start"></s-icon>
+                    <s-icon-button slot="end">
+                        <s-icon name="close"></s-icon>
+                    </s-icon-button>
+                </s-search>
+            </div>
+        </div>
+    </s-page>
+    <script type="module" src="sober-style-set.js"></script>
     <script src="./script.js"></script>
 </body>
 

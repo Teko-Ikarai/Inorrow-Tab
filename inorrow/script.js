@@ -1,12 +1,15 @@
+/*
+
 const bgList =
-    fetch('https://pixabay.com/api/?key=51491693-57776e4efd24b7178e2c384b3&orientation=horizontal&category=backgrounds')
-        .then((response) => response.json())
-        .then((json) => {
-            return json.hits;
-        });
+    fetch('https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN')
 
 console.log(bgList);
-console.log(bgList[1]);
-const l = JSON.parse('https://pixabay.com/api/?key=51491693-57776e4efd24b7178e2c384b3&orientation=horizontal&category=backgrounds');
 
-console.log(l);
+bgList
+    .then(result => result.webformatURL)
+    .then(url => {
+        document.getElementById("main").style.backgroundImage = "url(" + url + ")";
+    })
+const l = bgList.then(result => {return result});
+
+console.log(l);*/
