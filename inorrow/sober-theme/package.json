@@ -1,0 +1,21 @@
+{
+  "name": "sober-theme",
+  "version": "0.1.2-alpha.1",
+  "description": "Sober Theme",
+  "type": "module",
+  "scripts": {
+    "build": "node dev/build.js"
+  },
+  "author": "apprat",
+  "repository": "apprat/sober-theme",
+  "homepage": "https://soberjs.com",
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "esbuild": "^0.24.2"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "^0.2.7"
+  }
+}
