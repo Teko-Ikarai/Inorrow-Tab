@@ -13,3 +13,27 @@ bgList
 const l = bgList.then(result => {return result});
 
 console.log(l);*/
+
+const _Date_ = new Date();
+
+let date = document.getElementById('date');
+let time = document.getElementById('time');
+let searchBar = document.getElementById('search-bar');
+
+date.innerHTML =
+    _Date_.toLocaleString('en-UK', { 'month': 'short' }) + ' / ' + _Date_.getDate();
+
+time.innerHTML = 
+    _Date_.getHours() + ':' + _Date_.getMinutes();
+
+setInterval(() => {
+    let timeNow = new Date();
+    time.innerHTML = 
+    timeNow.getHours() + ':' + timeNow.getMinutes();
+}, 10000);
+
+searchBar.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        window.location.href = 'https://www.bing.com/search?q=' + searchBar.value;
+    }
+})

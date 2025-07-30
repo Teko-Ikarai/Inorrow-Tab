@@ -14,28 +14,30 @@ s-page {
 }
 
 .main {
-    padding-top: 10%;
+    padding: 10%;
     position: relative;
     z-index: 0;
     height: 100%;
-    background-image: url('https://bing.img.run/1366x768.php');
+    background-image: url('https://bing.biturl.top/?resolution=1366&format=image&index=0&mkt=zh-CN');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .clock {
-    color: #fff;
     opacity: 0.8;
+
+    padding-bottom: 3%;
+
     #date {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'HarmonyOS Sans Light', Arial, Helvetica, sans-serif;
     }
     #time {
-        font-family: 'Ubuntu Mono', monospace;
-        font-size: 4rem;
+        font-family: 'HarmonyOS Sans Semibold', 'Ubuntu Mono', monospace;
+        font-size: 6rem;
     }
 }
 
 .search-bar {
-    width: 60%;
+    width: 70%;
     opacity: 0.8;
 }

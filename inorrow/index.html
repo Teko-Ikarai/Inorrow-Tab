@@ -18,21 +18,18 @@
     -->
     <s-page>
         <div class="main" id="main">
-            <div class="clock">
-                <div id="date">123</div>
-                <div id="time">abcMl</div>
+            <div class="clock" id="clock">
+                <div id="date">Jun 1</div>
+                <div id="time">00:00</div>
             </div>
             <div>
-                <s-search placeholder="搜索关键字" class="search-bar">
+                <s-search placeholder="搜索关键字" class="search-bar" id="search-bar">
                     <s-icon name="search" slot="start"></s-icon>
-                    <s-icon-button slot="end">
-                        <s-icon name="close"></s-icon>
-                    </s-icon-button>
                 </s-search>
             </div>
         </div>
     </s-page>
-    <script type="module" src="sober-style-set.js"></script>
+    <script type="module" src="./sober-theme-setting.js"></script>
     <script src="./script.js"></script>
 </body>
 
