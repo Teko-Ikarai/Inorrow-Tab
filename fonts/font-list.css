@@ -2,3 +2,13 @@
     font-family: 'Ubuntu Mono';
     src: url(./UbuntuMono-R.ttf);
 }
+
+@font-face {
+    font-family: 'HarmonyOS Sans Light';
+    src: url(./HarmonyOS_Sans_Light.ttf);
+}
+
+@font-face {
+    font-family: 'HarmonyOS Sans Semibold';
+    src: url(./HarmonyOS_Sans_Semibold.ttf);
+}
