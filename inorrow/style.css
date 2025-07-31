@@ -14,7 +14,6 @@ s-page {
 }
 
 .main {
-    padding: 10%;
     position: relative;
     z-index: 0;
     height: 100%;
@@ -23,10 +22,25 @@ s-page {
     background-size: cover;
 }
 
+.pages {
+    height: 100%;
+    width: 100%;
+
+    s-carousel-item {
+        background: none;
+    }
+}
+
+.main-page {
+    margin-top: 10%;
+}
+
 .clock {
     opacity: 0.8;
 
     padding-bottom: 3%;
+
+    text-shadow: 0px 0px 25px #fff;
 
     #date {
         font-family: 'HarmonyOS Sans Light', Arial, Helvetica, sans-serif;

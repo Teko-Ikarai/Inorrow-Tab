@@ -18,15 +18,23 @@
     -->
     <s-page>
         <div class="main" id="main">
-            <div class="clock" id="clock">
-                <div id="date">Jun 1</div>
-                <div id="time">00:00</div>
-            </div>
-            <div>
-                <s-search placeholder="搜索关键字" class="search-bar" id="search-bar">
-                    <s-icon name="search" slot="start"></s-icon>
-                </s-search>
-            </div>
+            <s-carousel autoplay="false" class="pages">
+                <s-carousel-item selected="true" class="main-page">
+                    <div class="clock" id="clock">
+                        <div id="date">Jun 1</div>
+                        <div id="time">00:00</div>
+                    </div>
+                    <div>
+                        <s-search placeholder="搜索关键字" class="search-bar" id="search-bar">
+                            <s-icon name="search" slot="start"></s-icon>
+                        </s-search>
+                    </div>
+                </s-carousel-item>
+                <s-carousel-item ></s-carousel-item>
+                <s-carousel-item ></s-carousel-item>
+                <s-carousel-item ></s-carousel-item>
+                <s-carousel-item ></s-carousel-item>
+            </s-carousel>
         </div>
     </s-page>
     <script type="module" src="./sober-theme-setting.js"></script>

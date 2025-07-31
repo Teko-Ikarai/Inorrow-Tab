@@ -23,13 +23,19 @@ let searchBar = document.getElementById('search-bar');
 date.innerHTML =
     _Date_.toLocaleString('en-UK', { 'month': 'short' }) + ' / ' + _Date_.getDate();
 
-time.innerHTML = 
-    _Date_.getHours() + ':' + _Date_.getMinutes();
+time.innerHTML =
+    _Date_.toLocaleTimeString('en-UK', {
+        'hour': '2-digit',
+        'minute': '2-digit'
+    })
 
 setInterval(() => {
     let timeNow = new Date();
-    time.innerHTML = 
-    timeNow.getHours() + ':' + timeNow.getMinutes();
+    time.innerHTML =
+        _Date_.toLocaleTimeString('en-UK', {
+            'hour': '2-digit',
+            'minute': '2-digit'
+        })
 }, 10000);
 
 searchBar.addEventListener('keydown', (e) => {
