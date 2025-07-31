@@ -32,7 +32,7 @@ time.innerHTML =
 setInterval(() => {
     let timeNow = new Date();
     time.innerHTML =
-        _Date_.toLocaleTimeString('en-UK', {
+        timeNow.toLocaleTimeString('en-UK', {
             'hour': '2-digit',
             'minute': '2-digit'
         })
